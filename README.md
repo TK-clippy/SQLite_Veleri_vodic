@@ -6,7 +6,7 @@ Praktični vodič za SQLite s primjerom baze fakulteta, SQL skriptom i uputama z
 - [Službena SQLite dokumentacija](https://sqlite.org/docs.html)
 - [SQL sintaksa](https://sqlite.org/lang.html)
 - [Naredbe programa sqlite3](https://sqlite.org/cli.html)
-- [Upitna stranica na službenoj dokumentaciji]([https://sqlite.org/cli.html](https://sqlite.org/codeofethics.html)
+- [Upitna stranica na službenoj dokumentaciji](https://sqlite.org/cli.html](https://sqlite.org/codeofethics.html)
 
 ## Instalacija SQLitea
 
