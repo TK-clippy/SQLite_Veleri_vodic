@@ -1,5 +1,88 @@
-# SQLite_Veleri_vodic
+# SQLite_VeleRi_vodic
 Praktični vodič za SQLite s primjerom baze fakulteta, SQL skriptom i uputama za rad u GUI alatu, terminalu ili SQLite Fiddleu. Uključuje pregled podataka, izradu kopije baze i izvoz u CSV.
+
+## Dokumentacija
+
+- [Službena SQLite dokumentacija](https://sqlite.org/docs.html)
+- [SQL sintaksa](https://sqlite.org/lang.html)
+- [Naredbe programa sqlite3](https://sqlite.org/cli.html)
+
+## Instalacija SQLitea
+
+Za rad u terminalu potreban je program `sqlite3`. SQLite ne zahtijeva pokretanje zasebnog poslužitelja: baza se sprema u datoteku.
+
+### Windows
+
+1. Na [službenoj stranici za preuzimanje](https://sqlite.org/download.html) pronađite **Precompiled Binaries for Windows**.
+2. Preuzmite ZIP paket **sqlite-tools-win-x64-…zip** za x64 računala ili odgovarajući ARM64 paket.
+3. Raspakirajte ga, primjerice u `C:\sqlite`, i tu mapu dodajte u korisničku varijablu **Path**.
+4. Otvorite novi terminal i provjerite instalaciju:
+
+```powershell
+sqlite3 --version
+```
+
+Bez dodavanja u `Path` program možete pokrenuti punom putanjom:
+
+```powershell
+C:\sqlite\sqlite3.exe fakultet.db
+```
+
+### Linux
+
+**Ubuntu / Debian / Linux Mint:**
+
+```bash
+sudo apt update
+sudo apt install sqlite3
+```
+
+**Fedora:**
+
+```bash
+sudo dnf install sqlite
+```
+
+**Arch Linux / Manjaro:**
+
+```bash
+sudo pacman -S sqlite
+```
+
+### macOS
+
+Ako koristite [Homebrew](https://brew.sh/), instalirajte [paket sqlite](https://formulae.brew.sh/formula/sqlite):
+
+```bash
+brew install sqlite
+```
+
+Za pokretanje upravo instalirane verzije koristite:
+
+```bash
+"$(brew --prefix sqlite)/bin/sqlite3" --version
+"$(brew --prefix sqlite)/bin/sqlite3" fakultet.db
+```
+
+### Android (Termux)
+
+U aplikaciji [Termux](https://termux.dev/) pokrenite:
+
+```bash
+pkg update
+pkg install sqlite
+```
+
+### Provjera i pokretanje
+
+Na Linuxu i u Termuxu, kao i na Windowsu nakon dodavanja u `Path`, provjerite verziju i otvorite bazu:
+
+```bash
+sqlite3 --version
+sqlite3 fakultet.db
+```
+
+Za primjere u ovom vodiču potreban je **SQLite 3.37.0 ili noviji** zbog tablica `STRICT`. Ako ne želite instalirati SQLite, možete raditi u [SQLite Fiddleu](https://sqlite.org/fiddle/index.html).
 
 # Kratki vodič za SQLite
 
